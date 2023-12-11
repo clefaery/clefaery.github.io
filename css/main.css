@@ -1,0 +1,811 @@
+*{
+    box-sizing: border-box;
+}
+
+/* https://gomakethings.com/smooth-scrolling-links-with-only-css/ */
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    background-color: #F7F5E9;
+    cursor:default;
+}
+
+
+h1{
+    font-family: TGPraktikal-Bold;
+    color: #F86309;
+    font-size: 1.75rem;
+    margin:0;
+}
+
+h2{
+    font-family: TGPraktikal-Bold;
+    color: #4C110E;
+    font-size:1.5rem;
+    margin:0;
+
+}
+
+h3{
+    font-family: 'DM Sans', sans-serif;
+    color: #4C110E;
+    font-size:1.35rem;
+    font-weight: 700;
+    margin:0;
+}
+
+h4{
+    font-family: 'DM Sans', sans-serif;
+    color: #4C110E;
+    font-size:1rem;
+    font-weight: 400;
+    margin:0;
+
+}
+
+
+p{
+    font-family: "DM Sans", sans-serif;
+    color: #4C110E;
+    font-size:1rem;
+    line-height: 1.5rem;
+
+}
+
+a{
+    font-family: "DM Sans", sans-serif;
+    font-size:1rem;
+    color:#F86309;
+    text-underline-offset: 0.3rem;
+
+}
+
+a:hover{
+    transition: 0.1s;
+    color: #0E6629;
+    text-underline-offset: 0.5rem;
+}
+
+::selection {
+    background: rgb(193, 197, 237, 0.78);
+  }
+
+
+  img {
+    display: block;
+    width: 100%;
+    height:auto;
+}
+
+
+.fa-circle-arrow-right{
+    font-size:1.5rem;
+    color:#F86309;
+}
+
+
+/* https://stackoverflow.com/questions/12906789/preventing-an-image-from-being-draggable-or-selectable-without-using-js */
+
+
+
+
+
+
+
+
+.padding{
+    padding-right:1rem;
+    padding-left:1rem;
+}
+
+/* ---------------------------- NAV BAR --------------------------------------*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+}
+
+.navbar .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar li{
+    font-weight: 400;
+    display: inline-block;
+
+}
+
+.navbar a{
+    font-family: "DM Sans", sans-serif;
+    color: #4C110E;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+
+}
+
+.navbar a:hover,
+.navbar a:focus{
+    transition: 0.1s;
+    text-decoration:underline ;
+    text-underline-offset: 0.5rem;
+    
+    
+}
+
+.home-logo img{
+    width:2rem;
+    height:auto;
+    transition:0.2s;
+    pointer-events: auto;
+
+}
+
+.home-logo img:hover,
+.home-logo img:focus{
+    transform: translateY(-5px);
+
+}
+
+
+
+
+/* ----------------------------LANDING PAGE --------------------------------------*/
+
+.tangerine-name, .tomato-name, .apple-name{
+    display: inline-block;
+    width:6vw;
+}
+
+.name-span, .span-role-2{
+    padding-right:1rem;
+    padding-left:1rem;
+    display: block;
+    /* text-align: center; */
+
+
+}
+
+.span-role{
+    padding-right:1rem;
+    padding-left:1rem;
+    display: block;
+    /* text-align: center; */
+}
+
+
+.landing-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding-right:1rem;
+    padding-left:1rem;
+    padding-top:5rem;
+    padding-bottom:6rem;
+    
+}
+
+
+.landing-page-container p{
+    max-width:100%;
+    font-weight: 600;
+
+
+}
+
+/* ----------------------------LANDING PAGE --------------------------------------*/
+
+
+/* ----------------------------  WORK SECTION --------------------------------------*/
+
+.work-container{
+    background-color: #FFD600;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+
+}
+
+
+#work h2{
+    padding-right:0.5rem;
+
+
+
+}
+
+#work h3{
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+
+
+}
+
+#work h4{
+    font-size: 0.825rem;
+
+}
+
+#work p{
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+
+}
+
+
+/* https://www.geeksforgeeks.org/how-to-style-parent-element-when-hover-over-a-child-element-in-css/ */
+
+.image-container img{
+    transition: 0.3s all ease-in-out;
+
+}
+
+.image-container img{
+    pointer-events: auto;
+}
+
+
+/* https://www.geeksforgeeks.org/how-to-zoom-an-image-on-mouse-hover-using-css/ */
+.image-container img:hover,
+.image-container img:focus{
+    transform:scale(1.07);
+
+}
+
+
+.view-project a, .view-project i{
+    pointer-events: auto;
+}
+
+
+/* https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
+.view-project:hover a, 
+.view-project:hover i,
+.view-project:focus a, 
+.view-project:focus i { 
+    transition: 0.1s;
+    color: #0E6629;
+    text-underline-offset: 0.5rem;
+    cursor:pointer;
+}
+
+.card-container{
+    pointer-events: none;
+}
+
+
+.card-container:hover{
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+ #work .web-tag{
+    padding: 0.2rem 0.3rem;
+    border-radius: 1rem;
+    background-color: #F8E1B7;
+    border: 1px solid #F86309;
+
+}
+#work .ui-tag{
+    padding: 0.2rem 0.3rem;
+    border-radius: 1rem;
+    background-color: #DBE3D2;
+    border: 1px solid #0E6629;
+
+}
+
+#work .art-tag{
+    padding: 0.2rem 0.3rem;
+    border-radius: 1rem;
+    background-color: #F5D9CA;
+    border: 1px solid #EE3E29;
+}
+
+.info-container{
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+
+.card-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0.75rem;
+
+    
+
+
+}
+
+
+
+.card-container{
+    background-color:#F7F5E9;
+    padding: 0.75rem 0.9rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-top:1rem;
+    border-radius: 1rem;
+    box-shadow: 0.188rem 0.25rem 0.938rem 0rem rgba(98, 41, 12, 0.23);
+    transition:0.3s;
+
+}
+
+.work-cards-container{
+    display: flex;
+    flex-direction: column;
+    row-gap:2rem;
+}
+
+
+
+
+
+
+.tags{
+    display:flex;
+    flex-direction: row;
+    padding-top:0.5rem;
+    column-gap: 0.5rem;
+}
+
+.title-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.image-container{
+/* background: linear-gradient(180deg, #C9E1EC, #7AB0F0 );  */
+padding:1rem;
+border-radius: 0.75rem;
+box-shadow: 0.188rem 0.25rem 0.938rem 0rem rgba(98, 41, 12, 0.23);
+overflow: hidden;
+
+
+
+}
+
+
+
+
+
+
+
+
+.tomato-name-fix{
+    width:2rem;
+}
+
+.view-project{
+    display:inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    align-items: center;
+}
+
+
+
+
+
+
+/* ----------------------------  WORK SECTION --------------------------------------*/
+
+/* ----------------------------  FOOTER SECTION --------------------------------------*/
+
+.yellow{
+    background-color: #FFD600;
+}
+
+.darker a{
+    color:#ac1a12;
+}
+
+#footer h2{
+    font-family: TGPraktikal-Bold;
+    font-size:1.15rem;
+    margin:0;
+    padding-top:2rem;
+    
+    
+}
+
+#footer p{
+    margin:0;
+    color: #4C110E;
+}
+
+#footer a:hover,
+#footer a:focus{
+    transition: 0.1s;
+    color: #0E6629;
+    text-underline-offset: 0.5rem;
+}
+
+.footer-info{
+    padding:0.25rem 0.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.footer-container{
+    margin-left:2rem;
+    margin-right:2rem;
+    padding-top:2.5rem;
+    padding-bottom:2.5rem;
+
+    
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a{
+    padding:0.5rem 0rem;
+    font-size: 1.15rem;
+}
+
+.footer-image-container img{
+    max-width:4rem;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+
+}
+
+/* https://stackoverflow.com/questions/16771225/css3-rotate-animation */
+
+@-moz-keyframes spin { 
+100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+100% { 
+    -webkit-transform: rotate(360deg); 
+    transform:rotate(360deg); 
+} 
+}
+/* ----------------------------  FOOTER SECTION --------------------------------------*/
+
+/* ------------------------ HYDROHOMIES PROJ DETAILS SECTION -------------------------------*/
+
+.summary{
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+.small{
+    font-size: 1rem;
+    color: #F86309;
+    font-family: 'DM Sans', sans-serif;
+    font-weight:400;
+
+}
+
+.highlight{
+    background-color: #FBE677;
+    padding:0.01rem;
+
+}
+
+.about-project p{
+    margin:0;
+
+}
+
+.about-project h1{
+    color:#4C110E;
+
+}
+
+
+
+
+
+.image-banner img {
+    width: 100%;
+    height: auto;
+
+}
+
+.summary-container{
+    padding-top: 3.5rem;
+    padding-bottom: 2.25rem;
+    border-bottom: 1px solid #b3b0ad;
+
+}
+
+
+
+
+
+.details-container{
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+}
+
+.sub-info{
+    padding-top:1rem;
+    padding-bottom:1rem;;
+}
+
+
+
+/* ------------------------ HYDROHOMIES PROJ DETAILS SECTION -------------------------------*/
+
+/* ------------------------ HYDROHOMIES OVERVIEW SECTION -------------------------------*/
+
+.section-padding{
+    padding:4rem 1rem;
+}
+
+.section-padding-between{
+    padding: 0rem 1rem 4rem 1rem;
+}
+
+
+
+.section-header{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2.125rem;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.sub-section-header{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.overview{
+    background-color: #FFD600;
+}
+
+/* ------------------------ HYDROHOMIES OVERVIEW SECTION -------------------------------*/
+/* ------------------------ HYDROHOMIES SECTION -------------------------------*/
+
+
+
+
+
+
+
+.case-study-image img, .about-image img{
+    display: block;
+    width:100%;
+    height:auto;
+    border:1px solid #CEB4AE;
+    border-radius:1rem;
+    
+}
+
+.case-study-image-full img{
+    width:100%;
+    height: auto;
+    border:1px solid #CEB4AE;
+    border-radius:1rem;
+}
+
+.case-study-image-gif img{
+    width:100%;
+    height: auto;
+    box-shadow: 0.188rem 0.25rem 0.938rem 0rem rgba(98, 41, 12, 0.23);
+
+
+}
+
+
+.case-study-image-gif{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    padding:2rem 1rem;
+    border: 1px solid #CEB4AE;
+    border-radius: 1rem;
+}
+
+.blue{
+    background: linear-gradient(180deg, #C9E1EC, #7AB0F0 ); 
+
+}
+
+.green{
+    background: linear-gradient(180deg, #E2E893, #BAD966 ); 
+
+}
+
+.block-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top:1rem;
+
+}
+
+.info-icon{
+    font-size: 3rem;
+    padding:1rem;
+}
+
+.center{
+    text-align: center;
+}
+
+.project-goals{
+    background-color: #da5605;
+
+}
+
+.goals-container{
+    /* margin-left:1rem;
+    margin-right:1rem; */
+    border-radius: 1.25rem;
+    margin-bottom:4rem;
+
+}
+
+.project-goals p{
+    max-width:20rem;
+}
+
+.white{
+    color:#F7F5E9;
+}
+
+
+
+.order-2{
+    order:2;
+}
+
+.order-1{
+    order:1;
+}
+/* ------------------------ HYDROHOMIES SECTION -------------------------------*/
+/* ------------------------ ABOUT SECTION -------------------------------*/
+
+.title-container-about h1{
+    font-size: 1.85rem;
+}
+
+.title-container-about{
+    /* display: flex; */
+    flex-direction: row;
+    padding-bottom: 1rem;
+    column-gap: 0.25rem;
+    align-items: center;
+    max-width:100%;
+}
+
+.title-wrapper{
+    width:100%;
+}
+
+.fruit-name{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.75rem;
+    align-items: center;
+}
+
+.about-links{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+/* ADVENTURE AWAITS */
+
+.feedback-container{
+    padding-top:1rem;
+}
+
+.research-hmw{
+    background-color: #0E6629;
+}
+
+.research-hmw h2{
+    color:#FFD600;
+}
+
+.research-hmw h3{
+    color:#F7F5E9;
+}
+
+.research-hmw p{
+    color:#DBE3D2;
+}
+
+.research-hmw .goals{
+    padding-bottom: 1rem;
+    padding-top:1rem;
+}
+
+.research-hmw .info{
+    padding-bottom:2.5rem;
+    border-bottom: 1px solid #CEB4AE;
+}
+
+.research-hmw .goals-container{
+    padding-top:4rem;
+}
+
+.arrow-left i, .arrow-right i{
+    font-size:3rem;
+    color:#4C110E;
+    cursor:pointer;
+    transition: 0.15s;
+
+    
+}
+
+.arrow-left i:hover, .arrow-right i:hover,
+.arrow-left i:focus, .arrow-right i:focus{
+    color:#da5605;
+    transform: translateY(-5px);
+
+}
+
+
+
+.arrows{
+    display:flex;
+    justify-content: center;
+    gap:1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+.problem .info{
+    padding-bottom:1.5rem;
+}
+
+
+.feedback-block{
+    background:#FFD600;
+    padding:1.5rem 1.5rem;
+    height:100%;
+    border-radius: 1rem;
+}
+
