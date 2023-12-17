@@ -98,6 +98,23 @@
         max-width:30rem;
     }
 
+    /* .gallery-container{
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        grid-auto-rows: 250px;
+    }
+
+    .horizontal{
+        grid-column:unset;
+    }
+    .vertical{
+        grid-row:unset;
+    }
+    .big{
+        grid-row:unset;
+        grid-column:unset;
+    }
+ */
+
     
 
 
@@ -235,6 +252,23 @@
 
     .title-container-about h1{
         font-size:3rem;
+    }
+
+    .horizontal{
+        grid-column:span 2;
+    }
+
+    .vertical{
+        grid-row:span 2;
+    }
+
+    .big{
+        grid-row:span 2;
+        grid-column:span 2;
+    }
+
+    .positioned img{
+        object-position: top center;
     }
 
 

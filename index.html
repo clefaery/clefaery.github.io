@@ -19,6 +19,9 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+
 
     <title>Michelle Wang | Portfolio</title>
 
@@ -130,37 +133,43 @@
 
     </section>
 
-    <section id="gallery">
-        <div class="gallery-container">
-            <a href="img/711.png">
+    <section id="gallery" class="section-padding">
+        <div class="title-container">
+            <h2>
+                artwork
+            </h2>                
+            <img class="tomato-name-fix" src="img/tomato.svg" alt="flat graphic of a tomato">
+        </div>
+        <div class="gallery-container auto-margin" id="lightgallery">
+            <a href="img/711.png" class="horizontal img-detail">
                 <img src="img/711.png" width="1500" height="938" alt="illustration of a 7-11">
              </a>
 
-             <a href="img/flowers.png">
+             <a href="img/flowers.png" class="vertical positioned img-detail">
                 <img src="img/flowers.png" width="778" height="785" alt="illustration of a girl in a field of flowers">
              </a>
 
-             <a href="img/iceland.png">
+             <a href="img/iceland.png" class="img-detail">
                 <img src="img/iceland.png" width="937" height="781" alt="illustration of a hotspring in Iceland">
              </a>
 
-             <a href="img/jelly fish.png">
+             <a href="img/jelly fish.png" class="vertical img-detail">
                 <img src="img/jelly fish.png" width="732" height="1091" alt="illustration of jellyfish floating in a room">
              </a>
 
-             <a href="img/lilies.png">
+             <a href="img/lilies.png" class="img-detail">
                 <img src="img/lilies.png" width="779" height="793" alt="illustration of a girl holding an umbrella">
              </a>
 
-             <a href="img/orange sandwich.png">
-                <img src="img/orange sandwich.png" width="705" height="705" alt="illustration of an orange fruit sandwich">
-             </a>
-
-             <a href="img/pokemon.png">
+             <a href="img/pokemon.png" class="vertical positioned img-detail">
                 <img src="img/pokemon.png" width="824" height="1063" alt="illustration of a girl with pokemon in the background">
              </a>
 
-             <a href="img/window.png">
+             <a href="img/orange sandwich.png" class="img-detail">
+                <img src="img/orange sandwich.png" width="705" height="705" alt="illustration of an orange fruit sandwich">
+             </a>
+
+             <a href="img/window.png" class="vertical img-detail">
                 <img src="img/window.png" width="2000" height="3000" alt="illustration of an abstract looking window">
              </a>
 
@@ -168,31 +177,32 @@
 
     </section>
 
-    <section id="footer">
+      
+    <section id="footer" class="yellow">
 
         <div class="footer-container">
             <h2>© 2023 michelle wang</h2>
             <p>designed and coded by michelle wang ☆</p>
 
             <div class="footer-info">
-                <div class="footer-links">
+                <div class="footer-links darker">
                     <!-- https://www.simplilearn.com/tutorials/html-tutorial/html-mailto#:~:text=MEANExplore%20Program-,How%20to%20Create%20Mailto%20Links%20in%20HTML%3F,%E2%80%9Cmailto%E2%80%9D%20parameter%20after%20it.&text=If%20you%20want%20to%20send,email%20address%20with%20a%20comma. -->
                     <a href="mailto:michelle230110@gmail.com">email↗</a>
                     <a href="https://www.linkedin.com/in/michelle-wang-687055257/">LinkedIn↗</a>
                     <a href="https://drive.google.com/file/d/1wnnrMixjLgvpAchy4Mb4Y1sOBmEqP080/view?usp=sharing">resume ↗</a>
                 </div>
+
            
             <div class="footer-image-container">
                 <img src="img/apple.svg" alt="flat graphic of a red apple">
             </div>
         </div>
+
         </div>
-
-
-
-
-
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>   
+    <script src="gallery.js"></script>
 
 
   </body>
